@@ -211,6 +211,32 @@ def health():
             "ts": time.strftime("%Y-%m-%d %H:%M:%S")}
 
 
+@app.route("/provision", methods=["POST"])
+def provision():
+    """Token-guarded per-buyer credential issue for the OUTREACH lane.
+
+    Needed because when the room runs on Kaggle the buyer logs into THIS
+    server's own sqlite: a pair created on the laptop would be refused here
+    (proven defect 2026-09-29 - demo-selftest mailed, login refused). The
+    sender calls this with X-Provision-Token (env DEMO_PROVISION_TOKEN or the
+    .provision-token file - never a query param, never on the wire).
+    """
+    token = os.environ.get("DEMO_PROVISION_TOKEN", "")
+    if not token:
+        tf = os.path.join(HERE, ".provision-token")
+        if os.path.exists(tf):
+            token = open(tf).read().strip()
+    got = request.headers.get("X-Provision-Token", "")
+    if not token or not got or not secrets.compare_digest(got, token):
+        return {"ok": False, "err": "forbidden"}, 403
+    u = (request.form.get("username") or "").strip().lower()
+    if not re.match(r"^[a-z0-9][a-z0-9._-]{2,31}$", u):
+        return {"ok": False, "err": "bad username"}, 400
+    _, pw = create_user(u, email=(request.form.get("email") or "")[:80],
+                        who=(request.form.get("who") or "")[:80])
+    return {"ok": True, "username": u, "password": pw}
+
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     err = None
