@@ -43,7 +43,7 @@ Three assets carry ~38 engineer-months of original engineering between them. Eac
 |---|---|
 | **Size** | 12,711 lines / 601 KB |
 | **Engineering** | 16.5 engineer-months |
-| **Value band** | $75,000 - 120,000 non-exclusive  |  $200,000 - 350,000 exclusive |
+| **Value band** | $75,000-120,000 non-exclusive  ·  $200,000-350,000 exclusive |
 | **Natural buyer** | Developer-tools companies, agent-platform builders, acqui-hire. |
 
 **Why it is worth what it is worth**
@@ -70,7 +70,7 @@ Three assets carry ~38 engineer-months of original engineering between them. Eac
 |---|---|
 | **Size** | ~300 files / 34 MB / 12 pipeline stages |
 | **Engineering** | 9.5 engineer-months |
-| **Value band** | $25,000 - 40,000 non-exclusive  |  $60,000 - 150,000 exclusive |
+| **Value band** | $25,000-40,000 non-exclusive  ·  $60,000-150,000 exclusive |
 | **Natural buyer** | AI-training corpora (code patterns), generative-video companies. |
 
 **Why it is worth what it is worth**
@@ -96,7 +96,7 @@ The interactive coding-agent core, without the mobile/env layer.
 |---|---|
 | **Size** | ~8,112 lines / 382 KB |
 | **Engineering** | 12.0 engineer-months |
-| **Value band** | $25,000 - 45,000 non-exclusive  |  $80,000 - 150,000 exclusive |
+| **Value band** | $25,000-45,000 non-exclusive  ·  $80,000-150,000 exclusive |
 | **Natural buyer** | Interactive-agent buyers; normally bundled. |
 
 **Why it is worth what it is worth**
