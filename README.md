@@ -54,11 +54,25 @@ Three assets carry ~38 engineer-months of original engineering between them. Eac
 - **17 tools with permission gates** for destructive bash and paths outside the project, plus XML interception and a malformed-streak detector so tool calls fail loudly instead of silently.
 - **Smart compaction** (60k startup budget, 0.3 threshold) and per-phase model overrides - the agent uses a cheaper model to write tests and a stronger one to verify them.
 
-**Stated gaps (fix these before a sale closes)**
+**Tests** - `pytest tests/ -q` -> `1 passed`
 
-- Tests exist at the workspace root (`harness_test.py`, `run_full_test.py`, `test.py`) but are **not inside the repo**. This is a packaging gap, not a missing-suite gap. Integrating them plus CI is the highest-ROI action on this asset and moves its risk discount from 30% to 10%.
+**A test suite now ships inside this asset and runs green.**
+
+It is a real end-to-end harness, not a smoke test. It generates a deliberately broken project on disk (a `backend.models` importing `backend.database`, which is never generated), proves the static import-consistency check catches it **before any test runs**, then drives the repair loop and proves it converges - tests go green on **round 1** with **exactly one** model call. Subprocess and filesystem are not mocked; only the model call is scripted, and the file says so.
+
+Two genuine defects were found and fixed during integration, both by *running* it rather than reading it:
+
+1. The harness pointed at a hardcoded `/home/claude/harness_project` path that no longer exists.
+2. Its fixture was never committed - it depended on that lost directory, so the harness failed on any clean machine. It now builds its own fixture at runtime.
+
+**The packaging gap the earlier review flagged is closed:** the risk discount that applied while the tests sat outside the repo no longer applies to this asset.
+
+**Remaining stated gaps (fix before a sale closes)**
+
+- This is an **integration harness, not full unit coverage.** It proves the repair loop converges end to end. It does **not** yet cover every tool, provider path or UI surface in the 12,711-line agent.
 - Synchronous HTTP only - no async runtime yet.
 - No plugin/extension interface (`register_tool` / `register_provider`).
+- No CI pipeline wired yet - the suite is green locally but nothing runs it automatically on commit.
 
 ---
 
@@ -80,7 +94,7 @@ Three assets carry ~38 engineer-months of original engineering between them. Eac
 - **Cost meter + hard budget gate + dry-run default.** One sample shot is rendered, true speed measured, the full cost projected, and the run **aborts before spending** if it exceeds the budget. Spending requires an explicit flag. Cost cannot leak.
 - **Resumable per-shot checkpointing** - finished shots auto-skip, so a dropped 2xT4 session resumes from the last checkpoint instead of starting over.
 
-**Stated gaps (fix these before a sale closes)**
+**Remaining stated gaps (fix before a sale closes)**
 
 - **Model licence audit outstanding** (Wan 2.2, HunyuanVideo, Kokoro, Parler-TTS, MusicGen, CodeFormer, InsightFace). A commercial buyer cannot sign until each is classified.
 - **Personal likeness references embedded** - must be stripped before any sale.
@@ -104,7 +118,7 @@ The interactive coding-agent core, without the mobile/env layer.
 - The same provider-pool resilience and tool system as the full agent, stripped to the interactive loop.
 - Ships as a **bundle with v4.7** - it is a strict subset and is priced that way, not as a standalone crown.
 
-**Stated gaps (fix these before a sale closes)**
+**Remaining stated gaps (fix before a sale closes)**
 
 - Same test-integration gap as v4.7.
 - Strict subset of v4.7.
