@@ -146,8 +146,7 @@ earlier on this page is the gate, not a footnote: a repository that carried MIT 
 a commercial licence, because the buyer already holds one, and a public repository is offered
 as a licence agreement plus support rather than as secrecy. If the asset you are asking about
 is in the excluded set, the answer is no at any price, and it will be said in writing rather
-than implied. The three crown jewels above are not mapped to a repository on this page, so
-their licence state is unverified until that mapping exists - ask for it before pricing them.
+than implied. The three crown jewels above are now mapped to real repositories in the section further down, and the mapping changes what can be sold: one of the three is licensable as written, and the other two are publicly downloadable and are not offered as source rights at any price.
 - Written scope first, then price against the band above.
 - 50% advance to begin; balance on verified delivery.
 - Written channels only.
@@ -239,3 +238,48 @@ component is cleared:
 Rule that follows from this, and binds every conversation: state the licence state of the
 specific asset before you price it, and never imply commercial rights in a repository that
 MIT already gave away.
+## Crown jewels - where they actually live (measured 2026-10-31T23:40:43Z)
+
+Each of the three assembles from the git trees of the repositories in the measured set, plus
+every private repository. Repository state is from the same run. No mapping is asserted that
+was not read back.
+
+### 1. neon_architect_v4_7_mobile_env.py - NEON ARCHITECT v4.6.4
+Repository: **god_ai** (private, no licence file), path 
+eon_architect_v4_7_mobile_env.py,
+601,064 bytes. Second copy: **lasthelp** (private, no licence file),
+emergentsh/neon_architect_v4_7_mobile_env.py, 533,181 bytes. Further copies inside the
+oioi/* trees of god_ai, also private.
+
+**Licensable.** This is the only crown jewel that sits in private repositories with no licence
+file, so the non-exclusive band on this asset can be performed as written.
+
+### 2. neon_architect.py - NEON ARCHITECT v4.6.4, Compact
+Repository: **ases_v3_1** (PUBLIC), path 
+eon_architect.py, 380,235 bytes - identical in size
+to the copies in god_ai and lasthelp/_patch_backup_20260806_163808/antigravity-kandover/.
+Also present in crypto-trader-v1_1/ inside the god_ai forest.
+
+**Not offered as a licence.** The compact asset is publicly downloadable, and until
+2026-11-01 that public repository carried an MIT licence, so the source was free for anyone
+to use commercially. A 25,000-45,000 non-exclusive band over it would be selling a right the
+buyer already holds. The engineering description above stays true; the price does not apply.
+
+### 3. "GODSHAND_src_FIX" - the path named above does not exist
+Measured across all 49 repositories in the catalogue tree plus every private repository: no
+directory named GODSHAND_src_FIX exists anywhere in the account. 365 paths contain the
+string GODSHAND, and the largest body of them is ntigravity-kandover/GODSHAND_MASTER/ -
+that repository is PUBLIC with no licence file - plus GODSHAND_MASTER.zip, 4,568,288 bytes,
+in the same public repository.
+
+**Two separate problems, both stated.** First, the crown-jewel entry names a path that is not
+in the catalogue it belongs to, so a buyer asking for it cannot be sent it as described.
+Second, the closest real asset is public and not licensable as code. The film pipeline's model
+licence audit, stripped likeness references and duplicate-copy defect listed in its own gaps
+section remain open and unchanged.
+
+### What follows for pricing
+One crown jewel of three is licensable as written. The other two are offered as a licence
+agreement, support, and a build - never as source rights, and never at the bands that appear
+above them. That is the honest shape of the offer, and it is written here rather than
+explained on request.
