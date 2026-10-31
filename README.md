@@ -43,7 +43,7 @@ Three assets carry ~38 engineer-months of original engineering between them. Eac
 |---|---|
 | **Size** | 12,711 lines / 601 KB |
 | **Engineering** | 16.5 engineer-months |
-| **Value band** | $75,000-120,000 non-exclusive  ·  $200,000-350,000 exclusive |
+| **Value band** | $75,000-120,000 non-exclusive. Exclusive is not quoted on this page: it is a private written conversation at audit value, and it is not available for any repository that is public or was MIT-published
 | **Natural buyer** | Developer-tools companies, agent-platform builders, acqui-hire. |
 
 **Why it is worth what it is worth**
@@ -84,7 +84,7 @@ Two genuine defects were found and fixed during integration, both by *running* i
 |---|---|
 | **Size** | ~300 files / 34 MB / 12 pipeline stages |
 | **Engineering** | 9.5 engineer-months |
-| **Value band** | $25,000-40,000 non-exclusive  ·  $60,000-150,000 exclusive |
+| **Value band** | $25,000-40,000 non-exclusive. Exclusive is not quoted on this page: it is a private written conversation at audit value, and it is not available for any repository that is public or was MIT-published
 | **Natural buyer** | AI-training corpora (code patterns), generative-video companies. |
 
 **Why it is worth what it is worth**
@@ -110,7 +110,7 @@ The interactive coding-agent core, without the mobile/env layer.
 |---|---|
 | **Size** | ~8,112 lines / 382 KB |
 | **Engineering** | 12.0 engineer-months |
-| **Value band** | $25,000-45,000 non-exclusive  ·  $80,000-150,000 exclusive |
+| **Value band** | $25,000-45,000 non-exclusive. Exclusive is not quoted on this page: it is a private written conversation at audit value, and it is not available for any repository that is public or was MIT-published
 | **Natural buyer** | Interactive-agent buyers; normally bundled. |
 
 **Why it is worth what it is worth**
@@ -138,6 +138,14 @@ Licensing is **non-exclusive by default** - the same asset may be licensed to
 multiple buyers, and the catalogue stays ours. Exclusive transfer is a separate
 conversation at audit value, and is never the default.
 
+
+Precondition on every price above, and it is not a formality. The licence status section
+earlier on this page is the gate, not a footnote: a repository that carried MIT cannot be sold
+a commercial licence, because the buyer already holds one, and a public repository is offered
+as a licence agreement plus support rather than as secrecy. If the asset you are asking about
+is in the excluded set, the answer is no at any price, and it will be said in writing rather
+than implied. The three crown jewels above are not mapped to a repository on this page, so
+their licence state is unverified until that mapping exists - ask for it before pricing them.
 - Written scope first, then price against the band above.
 - 50% advance to begin; balance on verified delivery.
 - Written channels only.
