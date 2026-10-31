@@ -8,7 +8,7 @@ count below is **git-measured and reproducible**, not asserted.
 
 | Metric | Value |
 |---|---|
-| Repositories in account | 122 |
+| Repositories in account | 122 (measured 2026-09-29; the account now holds 228 and 5 are private - see the licence status section) |
 | **Private** repositories | **118** |
 | **Source lines, total measured** | **1,952,288** across **49** repositories |
 | - original work | 879,401 |
@@ -158,7 +158,7 @@ text only, no calls) | MCA DIN 10386590
 
 Two numbers describe two different things, and both are true:
 
-- **122** repositories exist in the account, **118** of them private.
+- **122** repositories existed in the account on 2026-09-29, **118** of them private on that date. On 2026-11-01 it holds 228 repositories and 5 are private; both figures are stated with their dates so neither can be read as current when it is not.
 - **49** of them carry git-tracked source that counts toward the line measurement,
   totalling **1,952,288** lines.
 
