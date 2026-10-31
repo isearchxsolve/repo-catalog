@@ -163,12 +163,13 @@ Removal of the MIT licence file and this clarification were made together in one
 commit on 2026-11-01 to make the public face of this catalogue state exactly one
 thing. No price, band, gap or crown-jewel claim was altered.
 
-## Licence status of these 49 repositories - measured 2026-10-31T22:39:16Z
+## Licence status of these 49 repositories - measured 2026-10-31T22:43:56Z
 
-Measured on the same run that wrote this section. Nothing here is asserted.
+Measured in the same run that wrote this section. Nothing here is asserted; every number is
+computed and every total is checked against the 49.
 
-Two figures describe this account, and neither of them is the 122 / 118 printed in the
-table above, which was true on 2026-09-29 and is no longer true:
+The account no longer matches the 122 / 118 figures in the table above, which were true on
+2026-09-29. They are kept as a dated measurement, not as a current claim.
 
 | figure | value now |
 |---|---|
@@ -181,44 +182,50 @@ Of the 49 repositories measured in this catalogue:
 | state | count |
 |---|---|
 | private - can be licensed by written agreement | 3 |
-| public, no licence file - all rights reserved by default | 45 |
-| carried an MIT licence naming Kunal Das before 2026-11-01 | 0 |
-| template MIT, provenance unreviewed | 1 |
+| public, never carried a licence file - all rights reserved by default | 25 |
+| carried MIT naming Kunal Das before 2026-11-01 - **not licensable** | 20 |
+| template MIT, provenance unreviewed - **not offered** | 1 |
+| **total** | **49** |
 
 What that means for a buyer, plainly:
 
-1. **Licensable by written agreement:** the 3 private repositories and the
-   45 public repositories with no licence file. A repository with no licence
-   file grants nobody anything; a licence is therefore something to be bought, not something
-   already given away.
-2. **Not offered as a licence at any price:** the 0 that carried MIT. MIT
-   already gave every recipient a perpetual, free, commercial licence to use, modify and
+1. **Licensable by written agreement: 28 repositories** - the
+   private ones plus the public ones that never carried a licence file. A repository with no
+   licence file grants nobody anything. A licence there is something you buy, not something
+   you already have.
+2. **Not offered as a licence at any price: 20 repositories.** MIT already
+   granted every recipient a perpetual, free, commercial licence to use, modify and
    redistribute that code. That grant cannot be revoked for anyone who already obtained a
-   copy, so selling a commercial licence for those repositories would be selling what the
-   buyer already owns. Since 2026-11-01 each of them carries NOTICE.md stating all rights
-   reserved, which stops the grant going forward; it does not and cannot undo the grant to
-   anyone who already cloned, and this page does not pretend otherwise.
-3. **Excluded pending review:** ideation_to_prototype carries a template MIT licence whose
-   copyright line reads "contributors" rather than a named holder. Its provenance is
-   unreviewed and it is not offered for licensing until it is reviewed file by file.
+   copy, so selling a commercial licence for those repositories would be selling the buyer a
+   right they already own. Since 2026-11-01 each of them carries NOTICE.md stating all rights
+   reserved, which stops the grant going forward and cannot undo it for anyone who already
+   cloned. This page says so rather than implying otherwise.
+3. **Excluded pending review: ideation_to_prototype.** A template MIT licence whose
+   copyright line reads "contributors" rather than a named holder; provenance unreviewed,
+   not offered until reviewed file by file.
 
-Private repositories, named: lasthelp, the-beholder-project, timeofmylife
+The 20 MIT-published repositories, named: ack, api_money_bot_complete, ases_v3_1, crypto-ai-auto-trader, crypto-app-by-replit, crypto-trading-ai-agent, frontend, gumroad-products, hsf, idea-terminal-engine, kdp-polished, lateststablecode, nemo_test, neon_unified, oioi, omega, omniroute-monetizer, scratch, solana-auto-trader-live, stabletcode
+
+The 25 never-licensed public repositories, named: _fleet_flutter_release_20260817, _fleet_flutter_release_attempt2_20260817, _live_flutter_verification_20260817, _live_proof_fastapi_react_20260822, ai_video_monetizer, antigravity-kandover, claude_code_clone, convergence_framework, emergentsh_latest, god_ai_scripts, guardian_app, ikon_agent-main, oiioii_clone, oiioii_clone2, oiioii_clone3, oiioii_clone_final, oiioii_clone_final2, oiioii_clone_final3, oiioii_clone_full, oiioii_clone_gen, omniroute_dashboard, screen_guard_final, test_coding_agent, voice_agent_avatar, war-pipe
+
+The private repositories, named: lasthelp, the-beholder-project, timeofmylife
 
 ## Third-party components - licences not yet cleared
 
-These are carve-outs, not disclaimers. An asset below is not offered as a licence until the
-named component is cleared:
+Carve-outs, not disclaimers. An asset below is not offered as a licence until the named
+component is cleared:
 
-- **ikon_agent-main** is built on n8n v1.72.1. The base is counted separately in the
-  measurement and is not presented as original authorship. n8n is distributable under
-  fair-code terms, not under an OSI open-source licence, so a commercial licence built on it
-  needs upstream review before it is offered. This is a real gap, priced as one until closed.
-- **GODSHAND model stack** - Wan 2.2, HunyuanVideo, Kokoro, Parler-TTS, MusicGen, CodeFormer
-  and InsightFace - is unclassified, and several of those licences restrict commercial use.
+- **ikon_agent-main** is built on n8n v1.72.1. The base is counted separately and is not
+  presented as original authorship. n8n is distributable under fair-code terms rather than an
+  OSI open-source licence, so a commercial licence built on it needs upstream review first.
+  A real gap, priced as one until it is closed.
+- **GODSHAND model stack** - Wan 2.2, HunyuanVideo, Kokoro, Parler-TTS, MusicGen, CodeFormer,
+  InsightFace - is unclassified, and several of those licences restrict commercial use.
   Personal likeness references are embedded and must be stripped before any sale. The asset
   is not offered for licensing while that is true.
-- **Voice work** built on Coqui XTTS-v2 is non-commercial by that model's licence (CPML). It
-  is a demo capability, not a licensable one, until the engine or the licence changes.
+- **Voice work** built on Coqui XTTS-v2 is non-commercial under that model's licence (CPML).
+  It is a demo capability, not a licensable one, until the engine or the licence changes.
 
-Disclosure line for correspondence: state the licence state of the specific asset you are
-discussing before you price it. Never imply commercial rights in an MIT-published repository.
+Rule that follows from this, and binds every conversation: state the licence state of the
+specific asset before you price it, and never imply commercial rights in a repository that
+MIT already gave away.
