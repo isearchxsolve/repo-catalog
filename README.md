@@ -1,7 +1,9 @@
 # Repository Catalogue - Kunal Das (isearchxsolve)
 
-*Private source-code catalogue. Listings only - no source code is published and
+*Source-code catalogue. Listings only - no source code is published and
 ownership is retained. Licences are non-exclusive by default.*
+*The account holds 228 repositories, 5 private and 223 public. The 49 repositories measured below
+are the estate, and the licence-status section further down gates every price on this page.*
 
 Generated 2026-10-06 from the live GitHub account. Every line
 count below is **git-measured and reproducible**, not asserted.
