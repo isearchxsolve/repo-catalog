@@ -9,7 +9,7 @@ count below is **git-measured and reproducible**, not asserted.
 | Metric | Value |
 |---|---|
 | Repositories in account | 122 (measured 2026-09-29; the account now holds 228 and 5 are private - see the licence status section) |
-| **Private** repositories | **118** |
+| **Private** repositories | **5** (was **118** on 2026-09-29) |
 | **Source lines, total measured** | **1,952,288** across **49** repositories |
 | - original work | 879,401 |
 | - on a labelled open-source base | 1,072,887 |
