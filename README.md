@@ -145,3 +145,20 @@ conversation at audit value, and is never the default.
 
 **Contact:** Kunal Das - isearch.xsolve@gmail.com | +91 86172 16163 (WhatsApp
 text only, no calls) | MCA DIN 10386590
+
+## Counting convention (why two repo numbers appear)
+
+Two numbers describe two different things, and both are true:
+
+- **122** repositories exist in the account, **118** of them private.
+- **49** of them carry git-tracked source that counts toward the line measurement,
+  totalling **1,952,288** lines.
+
+The remaining repositories are empty placeholders, duplicate archives, or committed
+dependency trees and build output, and are excluded from the line count by the method
+stated above. The headline figure for this catalogue is therefore **49 repositories,
+1,952,288 git-measured source lines** - never 118 repositories of source.
+
+Removal of the MIT licence file and this clarification were made together in one
+commit on 2026-11-01 to make the public face of this catalogue state exactly one
+thing. No price, band, gap or crown-jewel claim was altered.
