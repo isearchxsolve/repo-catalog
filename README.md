@@ -162,3 +162,63 @@ stated above. The headline figure for this catalogue is therefore **49 repositor
 Removal of the MIT licence file and this clarification were made together in one
 commit on 2026-11-01 to make the public face of this catalogue state exactly one
 thing. No price, band, gap or crown-jewel claim was altered.
+
+## Licence status of these 49 repositories - measured 2026-10-31T22:39:16Z
+
+Measured on the same run that wrote this section. Nothing here is asserted.
+
+Two figures describe this account, and neither of them is the 122 / 118 printed in the
+table above, which was true on 2026-09-29 and is no longer true:
+
+| figure | value now |
+|---|---|
+| repositories in the account | 228 |
+| private | 5 |
+| public | 223 |
+
+Of the 49 repositories measured in this catalogue:
+
+| state | count |
+|---|---|
+| private - can be licensed by written agreement | 3 |
+| public, no licence file - all rights reserved by default | 45 |
+| carried an MIT licence naming Kunal Das before 2026-11-01 | 0 |
+| template MIT, provenance unreviewed | 1 |
+
+What that means for a buyer, plainly:
+
+1. **Licensable by written agreement:** the 3 private repositories and the
+   45 public repositories with no licence file. A repository with no licence
+   file grants nobody anything; a licence is therefore something to be bought, not something
+   already given away.
+2. **Not offered as a licence at any price:** the 0 that carried MIT. MIT
+   already gave every recipient a perpetual, free, commercial licence to use, modify and
+   redistribute that code. That grant cannot be revoked for anyone who already obtained a
+   copy, so selling a commercial licence for those repositories would be selling what the
+   buyer already owns. Since 2026-11-01 each of them carries NOTICE.md stating all rights
+   reserved, which stops the grant going forward; it does not and cannot undo the grant to
+   anyone who already cloned, and this page does not pretend otherwise.
+3. **Excluded pending review:** ideation_to_prototype carries a template MIT licence whose
+   copyright line reads "contributors" rather than a named holder. Its provenance is
+   unreviewed and it is not offered for licensing until it is reviewed file by file.
+
+Private repositories, named: lasthelp, the-beholder-project, timeofmylife
+
+## Third-party components - licences not yet cleared
+
+These are carve-outs, not disclaimers. An asset below is not offered as a licence until the
+named component is cleared:
+
+- **ikon_agent-main** is built on n8n v1.72.1. The base is counted separately in the
+  measurement and is not presented as original authorship. n8n is distributable under
+  fair-code terms, not under an OSI open-source licence, so a commercial licence built on it
+  needs upstream review before it is offered. This is a real gap, priced as one until closed.
+- **GODSHAND model stack** - Wan 2.2, HunyuanVideo, Kokoro, Parler-TTS, MusicGen, CodeFormer
+  and InsightFace - is unclassified, and several of those licences restrict commercial use.
+  Personal likeness references are embedded and must be stripped before any sale. The asset
+  is not offered for licensing while that is true.
+- **Voice work** built on Coqui XTTS-v2 is non-commercial by that model's licence (CPML). It
+  is a demo capability, not a licensable one, until the engine or the licence changes.
+
+Disclosure line for correspondence: state the licence state of the specific asset you are
+discussing before you price it. Never imply commercial rights in an MIT-published repository.
