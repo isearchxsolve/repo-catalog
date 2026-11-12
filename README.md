@@ -2,16 +2,21 @@
 
 *Source-code catalogue. Listings only - no source code is published and
 ownership is retained. Licences are non-exclusive by default.*
-*The account holds 228 repositories, 5 private and 223 public. The 49 repositories measured below
+*The account holds 238 repositories, 40 private and 198 public (re-measured 2026-11-10 evening).
+All 39 repositories offered on this page are private. The 49 repositories measured below
 are the estate, and the licence-status section further down gates every price on this page.*
 
-Generated 2026-10-06 from the live GitHub account. Every line
-count below is **git-measured and reproducible**, not asserted.
+Generated 2026-10-06 from the live GitHub account, corrected 2026-11-10 evening.
+Every line count below is **git-measured and reproducible**, not asserted.
+**This page contains no external links to the repositories it describes.** They are private,
+which is deliberate: the buyers of private code pay for what cannot be scraped. A buyer who
+wants to inspect a repository gets it under NDA by written request, never through a public
+URL that would leak what we are selling.
 
 | Metric | Value |
 |---|---|
-| Repositories in account | 122 (measured 2026-09-29; the account now holds 228 and 5 are private - see the licence status section) |
-| **Private** repositories | **5** (was **118** on 2026-09-29) |
+| Repositories in account | 238 (re-measured 2026-11-10 evening) |
+| **Private** repositories | **40** (was **5** on 2026-11-01; 35 offered repositories were made private on 2026-11-10 at the owner's order) |
 | **Source lines, total measured** | **1,952,288** across **49** repositories |
 | - original work | 879,401 |
 | - on a labelled open-source base | 1,072,887 |
@@ -129,7 +134,7 @@ The interactive coding-agent core, without the mobile/env layer.
 
 ## Full inventory by domain
 
-The complete measured list lives in `REPO-CATALOG-V2.md` and the machine-readable
+The complete measured list lives in `showcase/REPO-CATALOG-V2.md` and the machine-readable
 `measurement.json` (per-repository LOC, file counts, commits, language, disk, and
 open-source base where applicable). Both are in this repository so the numbers can
 be checked rather than trusted.
@@ -139,6 +144,16 @@ be checked rather than trusted.
 Licensing is **non-exclusive by default** - the same asset may be licensed to
 multiple buyers, and the catalogue stays ours. Exclusive transfer is a separate
 conversation at audit value, and is never the default.
+
+### End use - not negotiable, and it binds every buyer including resellers
+
+This code is not licensed for the creation of weapons, arms, ammunition, munitions,
+explosives, missiles, or any military or defence end use, for any state or non-state party.
+Because a marketplace or reseller can only license onward to parties it does not control, the
+licence terms must also forbid resale, sublicensing or transfer into such use, and that
+restriction must travel with the code. A buyer who will not accept that term is not a buyer.
+There is no "defensive", "national security", "dual-use" or "research" framing that changes
+this: if the output can be ammunition, the answer is no.
 
 
 Precondition on every price above, and it is not a formality. The licence status section
@@ -182,36 +197,67 @@ The account no longer matches the 122 / 118 figures in the table above, which we
 
 | figure | value now |
 |---|---|
-| repositories in the account | 228 |
-| private | 5 |
-| public | 223 |
+| repositories in the account | 238 (re-measured 2026-11-10 evening) |
+| private | 40 |
+| public | 198 |
 
 Of the 49 repositories measured in this catalogue:
 
 | state | count |
 |---|---|
-| private - can be licensed by written agreement | 3 |
-| public, never carried a licence file - all rights reserved by default | 25 |
+| private, no licence file ever - can be licensed by written agreement | 22 |
+| public, never carried a licence file - all rights reserved by default | 17 |
 | carried MIT naming Kunal Das before 2026-11-01 - **not licensable** | 20 |
 | template MIT, provenance unreviewed - **not offered** | 1 |
 | **total** | **49** |
 
+**CORRECTED 2026-11-10 evening, and the correction goes the wrong way for us.** The table
+previously read "private - can be licensed: 3 / public never-licensed: 25 / not licensable:
+20". That split was produced by reading each repository's *current* licence field after the
+MIT files had been removed on 2026-11-01, which reports no licence and therefore looks
+licensable. It was wrong, and the honest statement of why is this:
+
+Removing a licence file stops a grant going forward. It cannot revoke the grant for anyone
+who already took a copy. So a repository that was public under MIT is already free, at any
+price, forever, and no commercial licence can be sold over it. The 20 repositories in the
+"carried MIT" row are excluded for that reason and stay excluded.
+
+**What is true now, and it is the number a buyer may rely on: 22 of the 49 are licensable,
+471,547 authored lines, of which 249,984 are code, and 4 of those carry a deep engineering
+review.** Those four are god_ai, antigravity-kandover, emergentsh_latest and timeofmylife,
+at USD 135,000-280,000 together. god_ai is the largest and best-engineered of them and is
+live production infrastructure for our own operation, so it is offered only to a buyer who
+will accept that it is not idle - and to at least one marketplace partner it has been
+withdrawn outright for that reason.
+
+The 17 MIT-covered repositories that were previously presented as licensable remain available
+for audit, support and integration work, and this page says so rather than implying source
+rights can be bought.
+
 What that means for a buyer, plainly:
 
-1. **Licensable by written agreement: 28 repositories** - the
-   private ones plus the public ones that never carried a licence file. A repository with no
-   licence file grants nobody anything. A licence there is something you buy, not something
-   you already have.
+1. **Licensable by written agreement: 22 repositories, 471,547 authored lines (249,984 code)** -
+    a repository with no licence file grants nobody anything. A licence there is something
+    you buy, not something you already have. Four of the 22 carry a deep engineering review
+    and therefore an audited price: god_ai, antigravity-kandover, emergentsh_latest and
+    timeofmylife, together USD 135,000-280,000 non-exclusive. god_ai is live production
+    infrastructure and is not offered as idle code.
 2. **Not offered as a licence at any price: 20 repositories.** MIT already
-   granted every recipient a perpetual, free, commercial licence to use, modify and
-   redistribute that code. That grant cannot be revoked for anyone who already obtained a
-   copy, so selling a commercial licence for those repositories would be selling the buyer a
-   right they already own. Since 2026-11-01 each of them carries NOTICE.md stating all rights
-   reserved, which stops the grant going forward and cannot undo it for anyone who already
-   cloned. This page says so rather than implying otherwise.
+    granted every recipient a perpetual, free, commercial licence to use, modify and
+    redistribute that code. That grant cannot be revoked for anyone who already obtained a
+    copy, so selling a commercial licence for those repositories would be selling the buyer a
+    right they already own. Since 2026-11-01 each of them carries NOTICE.md stating all rights
+    reserved, which stops the grant going forward and cannot undo it for anyone who already
+    cloned. This page says so rather than implying otherwise. Over these, audit, support and
+    integration work is offered; source rights are not.
 3. **Excluded pending review: ideation_to_prototype.** A template MIT licence whose
-   copyright line reads "contributors" rather than a named holder; provenance unreviewed,
-   not offered until reviewed file by file.
+    copyright line reads "contributors" rather than a named holder; provenance unreviewed,
+    not offered until reviewed file by file.
+4. **A correction on our own record, 2026-11-10 evening.** An earlier version of this page
+   counted 28 repositories as licensable and quoted an audited band of USD 237,000-520,000
+   across 10 assets. Both were wrong: 17 of those repositories had been public under MIT and
+   were therefore already free, and their audit value - USD 102,000-240,000 - cannot be sold
+   at any price. The figures in point 1 replace them.
 
 The 20 MIT-published repositories, named: ack, api_money_bot_complete, ases_v3_1, crypto-ai-auto-trader, crypto-app-by-replit, crypto-trading-ai-agent, frontend, gumroad-products, hsf, idea-terminal-engine, kdp-polished, lateststablecode, nemo_test, neon_unified, oioi, omega, omniroute-monetizer, scratch, solana-auto-trader-live, stabletcode
 
@@ -259,21 +305,27 @@ Repository: ases_v3_1 (PUBLIC), path neon_architect.py, 380,235 bytes - identica
 the copies in god_ai and lasthelp/_patch_backup_20260806_163808/antigravity-kandover/.
 Also present in the crypto-trader-v1_1 tree inside the god_ai forest.
 
-Not offered as a licence. The compact asset is publicly downloadable, and until 2026-11-01
-that public repository carried an MIT licence, so the source was free for anyone to use
-commercially. A 25,000-45,000 non-exclusive band over it would be selling a right the buyer
-already holds. The engineering description above stays true; the price does not apply.
+Not offered as a licence. The repository that carries it, ases_v3_1, was public under an MIT
+licence until 2026-11-01, and removing the file cannot revoke the grant for anyone who already
+cloned. The source is therefore already free for anyone to use commercially, and a
+25,000-45,000 non-exclusive band over it would be selling a right the buyer already holds.
+(The repository is now private, which stops further copies being taken; it does not undo the
+grant for the copies already taken.) The engineering description above stays true; the price
+does not apply.
 
 ### 3. "GODSHAND_src_FIX" - the path named above does not exist
 Measured across all 49 repositories in the catalogue tree plus every private repository: no
 directory named GODSHAND_src_FIX exists anywhere in the account. 365 paths contain the string
 GODSHAND, and the largest body of them is antigravity-kandover/GODSHAND_MASTER/ - that
-repository is PUBLIC with no licence file - plus GODSHAND_MASTER.zip, 4,568,288 bytes, in the
-same public repository.
+repository carries no licence file and is now private - plus GODSHAND_MASTER.zip,
+4,568,288 bytes, in the same repository.
 
 Two separate problems, both stated. First, the crown-jewel entry names a path that is not in
 the catalogue it belongs to, so a buyer asking for it cannot be sent it as described. Second,
-the closest real asset is public and not licensable as code. The film pipeline's model licence
+the closest real asset is not licensable as code: it sits in a repository with no licence
+file, but the film pipeline's own review states its model stack (Wan 2.2, HunyuanVideo,
+Kokoro, Parler-TTS, MusicGen, CodeFormer, InsightFace) is unclassified and restricts
+commercial use, and that personal likeness references are embedded. The model licence
 audit, stripped likeness references and duplicate-copy defect listed in its own gaps section
 remain open and unchanged.
 
