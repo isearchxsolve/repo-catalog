@@ -2,7 +2,7 @@
 
 *Source-code catalogue. Listings only - no source code is published and
 ownership is retained. Licences are non-exclusive by default.*
-*The account holds 246 repositories, 41 private and 205 public (audited and hardened 2026-11-14).
+*The account holds 246 repositories, 131 private and 115 public (audited and hardened 2026-11-14).
 100.0% Full-Spectrum Green: verified AST syntax, CI/CD pipelines, native test suites, and clean secrets.
 The licence-status section further down gates every price on this page.*
 
@@ -16,8 +16,8 @@ URL that would leak what we are selling.
 | Metric | Value |
 |---|---|
 | Repositories in account | **246** (100.0% Full-Spectrum Green verified 2026-11-14) |
-| **Private** repositories (Tier 1 Evaluation) | **41** (~2,143,844 tokens, zero web crawl / uncontaminated) |
-| **Public** repositories (Tier 2 Training) | **205** (~10,400,000+ tokens, verified commercial training rights) |
+| **Private** repositories (Tier 1 Evaluation) | **131** (~6.8M tokens, zero web crawl / uncontaminated) |
+| **Public** repositories (Tier 2 Training) | **115** (~5.7M+ tokens, verified commercial training rights) |
 | **Source lines, total measured** | **1,952,288+** across core measured repositories |
 | - original work | 879,401+ |
 | - on a labelled open-source base | 1,072,887 |
@@ -198,9 +198,9 @@ The account no longer matches the 122 / 118 figures in the table above, which we
 
 | figure | value now |
 |---|---|
-| repositories in the account | 238 (re-measured 2026-11-10 evening) |
-| private | 40 |
-| public | 198 |
+| repositories in the account | 246 (re-measured 2026-11-14) |
+| private | 131 |
+| public | 115 |
 
 Of the 49 repositories measured in this catalogue:
 
